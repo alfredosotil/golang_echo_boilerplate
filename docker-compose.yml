@@ -32,12 +32,12 @@ services:
       - MYSQL_DATABASE=${DB_NAME}
       - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
     volumes:
-      - database_mysql:/var/lib/mysql
+      - echo_database_mysql:/var/lib/mysql
     networks:
       - echo-demo-stack
 
 volumes:
-  database_mysql:
+  echo_database_mysql:
 
 networks:
   echo-demo-stack:

@@ -26,4 +26,4 @@ compose-up: ## Starts a local instance of the service with instances in docker
 	fi
 
 compose-down: ## Shutdowns the local containers
-	@docker-compose -p ws -f docker-compose.yml down --rmi local
+	@docker-compose -p ws -f docker-compose.yml down --rmi local -v
